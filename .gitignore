@@ -1,0 +1,6 @@
+Results*/
+*.png
+*.pth
+*.aux
+*.log
+*.out
