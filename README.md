@@ -93,20 +93,6 @@ Le script va:
 4. Effectuer l'inference sur Testset/01
 5. Generer les segmentations et tracks dans `Results/`
 
-### Exploration avec Jupyter
-
-Pour visualiser et analyser les donnees:
-
-```bash
-jupyter notebook exploration_visualization.ipynb
-```
-
-Le notebook contient:
-- Exploration des donnees
-- Analyse statistique des cellules
-- Visualisation des ground truth
-- Explication detaillee des parametres
-- Visualisation des resultats
 
 ## 📁 Structure des Resultats
 
