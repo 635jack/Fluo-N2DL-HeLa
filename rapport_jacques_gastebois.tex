@@ -23,7 +23,7 @@
 \maketitle
 
 \section*{Contexte}
-Dans le cadre du Master 2 VMI, nous avons développé un pipeline complet de segmentation et de suivi de cellules HeLa pour le \emph{Cell Tracking Challenge}. Le jeu de données Fluo-N2DL-HeLa contient des noyaux marqués H2b-GFP acquis au microscope Olympus IX81 (objectif Plan 10x/0.4, 0{,}645~$\mu$m par pixel, pas temporel 30~min). L'objectif est de générer des masques de segmentation et des pistes temporelles évaluables avec les métriques SEG/DET/TRA du challenge.
+Voici un pipeline complet de segmentation et de suivi de cellules HeLa pour le \emph{Cell Tracking Challenge}. Le jeu de données Fluo-N2DL-HeLa contient des noyaux marqués H2b-GFP acquis au microscope Olympus IX81 (objectif Plan 10x/0.4, 0{,}645~$\mu$m par pixel, pas temporel 30~min). L'objectif est de générer des masques de segmentation et des pistes temporelles évaluables avec les métriques SEG/DET/TRA du challenge.
 
 \section{Approche méthodologique}
 \subsection{Architecture de segmentation}
@@ -94,7 +94,7 @@ Dans le cadre du Master 2 VMI, nous avons développé un pipeline complet de seg
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\textwidth]{results_segmentation_quality.png}
-	\caption{Visualisation des prédictions (haut: images brutes, milieu: version initiale, bas: version optimisée).}
+	\caption{Visualisation des prédictions.}
 \end{figure}
 
 \subsection{Statistiques globales}
@@ -120,7 +120,7 @@ Pour passer de la version \emph{baseline} (score $\approx 0{,}50$) à la version
 \end{itemize}
 
 \section{Conclusion et perspectives}
-Le pipeline final offre une performance estimée de $0{,}67$, supérieure aux méthodes baseline (0.52--0.62) du challenge. Les pistes principales d'amélioration sont la data augmentation, l'ajout d'un module de détection de divisions cellulaires et l'utilisation d'un tracking global (Hungarian). Néanmoins, la version optimisée est déjà solide pour une première soumission.
+Le pipeline final offre une performance estimée de $0{,}67$, supérieure aux méthodes baseline (0.52--0.62) du challenge. Les pistes principales d'amélioration sont la data augmentation, l'ajout d'un module de détection de divisions cellulaires et l'utilisation d'un tracking global (Hungarian). Néanmoins, la version optimisée est déjà solide pour une première soumission. L'intégralité du code, du rapport et des scripts d'analyse est disponible sur GitHub : \url{https://github.com/635jack/Fluo-N2DL-HeLa.git}.
 
 \vspace{1em}
 \noindent\textbf{Jacques Gastebois}\\
